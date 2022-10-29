@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Pr {
+    public static void main(String[] args) {
+
+        //////Материал из урока
+        String[] flowers  = new String[] {"Роза", "Тюльпан", "Ромашка"};
+        ArrayList<String> flowersArrayList = new ArrayList<>(Arrays.asList(flowers));
+        System.out.println(flowersArrayList.toString());
+
+        //////Попыталась переледелать под int, не работает, в чем может быть проблема?
+
+        int[] a = new int[] {1, 2, 3, 4, 5};
+        ArrayList<int[]> bArrayList = new ArrayList<>(Arrays.asList(a));
+        System.out.println(bArrayList.toString());
+
+        /////Позже нашла в интернете и этот вариант работает. Тут в () пишется Arrays, а не flowersArrayList
+        ///// (т.е не bArrayList в моем примере), получается, что для int пишется другое выражение?
+
+        System.out.println(Arrays.toString(a));
+}
+}

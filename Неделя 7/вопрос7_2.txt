@@ -1,0 +1,14 @@
+/////Вопрос 2. Для удаления какого-либо элемента в ArrayList используется метод remove().
+/////Можно удалять только через индекс? нельзя удалить, написав то значение, которое хочу удалить?
+
+        
+ArrayList<Integer> a = new ArrayList<Integer>();
+
+        a.add(15);
+        a.add(25);
+        a.add(34);
+
+        a.remove(34);
+
+        for (Integer b : a) {
+            System.out.println(b); }
