@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+
+public class Lesson7_3 {
+    //Создайте ArrayList из строк.
+    public static void main(String[] args) {
+        ArrayList<String> a = new ArrayList<String>();
+
+        a.add("Орхидеи");
+        a.add("Тюльпаны");
+        a.add("Пионы");
+        a.add("Ромашки");
+
+        for (String element : a) {
+            System.out.println(element);
+
+    // Добавьте еще один целочисленный ArrayList, в каждый элемент которого положите длину каждой строки строкового ArrayList.
+        ArrayList<Integer> b = new ArrayList<Integer>();
+
+        b.add(element.length());
+
+        for (Integer element1 : b) {
+            System.out.println(element1);
+        }
+
+    // Выведете оба списка на экран.
+
+}
+}
+}

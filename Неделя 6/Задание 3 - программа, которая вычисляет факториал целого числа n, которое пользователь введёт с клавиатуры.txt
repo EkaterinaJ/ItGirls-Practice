@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Lesson6_3 {
+    //Создайте программу, вычисляющую факториал целого числа n, которое пользователь введёт с клавиатуры, используя цикл for.
+
+    public static void main(String[] args){
+        System.out.print("Введите целое число больше 0: ");
+
+        Scanner inputInt = new Scanner(System.in);
+        int a = inputInt.nextInt();
+        System.out.println("Факториал числа равен " + calculateFactorial(a));
+    }
+    // метод calculateFactorial(), который вычисляет факториал числа n:
+    static int calculateFactorial(int n){
+            int b = 1;
+            for (int i = 1; i <=n; i ++){
+                b = b*i;
+            }
+            return b;
+        }
+
+}

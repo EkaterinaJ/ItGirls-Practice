@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Lesson5_2 {
+    public static void main (String[] args) {
+        System.out.print("Введите любое целое число: ");
+
+        Scanner inputInt = new Scanner(System.in);
+        int n = inputInt.nextInt();
+
+        String result = n % 2 == 0 ? "Число четное" : "Число нечетное";
+        System.out.println(result);
+
+        String result1 = (n & 1) == 0 ? "Четное" : "Нечетное";
+        System.out.println(result1);
+
+    }
+}

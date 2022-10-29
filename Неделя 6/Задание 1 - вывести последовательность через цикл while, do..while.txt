@@ -1,0 +1,16 @@
+public class Lesson6 {
+    public static void main (String[] args) {
+        int a = 1;
+        int b = 1;
+
+        while (a <= 512) {
+            System.out.println(a);
+            a *= 2;
+        }
+
+        do {
+            System.out.print(b + " ");
+            b *= 2;
+        } while (b <= 512);
+    }
+}

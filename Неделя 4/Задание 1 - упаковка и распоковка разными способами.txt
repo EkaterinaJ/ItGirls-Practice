@@ -1,0 +1,32 @@
+public class Lesson4 {
+
+    public static void main(String[] args) {
+        int a = 250;
+        Integer d;
+        d = new Integer(a);
+
+        int a1 = 260;
+        Integer d1;
+        d1 = Integer.valueOf(a1);
+
+        int a2 = 270;
+        Integer d2;
+        d2 = a2;
+
+        System.out.println(d);
+        System.out.println(d1);
+        System.out.println(d2);
+
+        Integer b = 190;
+        int c;
+        c = b.intValue();
+
+        Integer b1 = 195;
+        int c1;
+        c1 = b1;
+
+        System.out.println(c);
+        System.out.println(c1);
+
+    }
+}

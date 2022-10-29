@@ -1,0 +1,36 @@
+public class Lesson6_2 {
+    public static void main (String[] args) {
+        int a = 0;
+        int b = 0;
+        int c = 0;
+
+        // Пройдитесь по 50 целым элементам при помощи цикла while и напечатайте их на экран.
+        while (a < 50) {
+            System.out.print(a + " ");
+            a++;
+        }
+
+        System.out.println(" ");
+        // Пропустите печать для 5 и 25 элемента
+        while (b < 50) {
+            b++;
+            if (b == 5){
+                continue;
+            }
+            else if (b == 25) {
+                continue;
+            }
+            System.out.print(b + " ");
+        }
+
+        System.out.println(" ");
+        // можно таким образом записывать if? через логическое "или"
+        while (c < 50) {
+            c++;
+            if (c == 5 || c == 25 ){
+                continue;
+            }
+            System.out.print(c + " ");
+        }
+}
+}

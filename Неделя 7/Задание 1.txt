@@ -1,0 +1,12 @@
+public class Lesson7 {
+    //1. Создайте массив из целых чисел, выведете его на экран и посчитайте для него среднее арифметическое.
+    public static void main(String[] args) {
+        int[] a = {2, 4, 6, 8, 10};
+        int b = 0;
+
+        for (int c : a) {
+            b += c;
+        }
+        System.out.println("Среднее арифметическое = " + b / a.length);
+        }
+}

@@ -1,0 +1,19 @@
+public class Lesson4_3 {
+    public static void main(String[] args) {
+
+        // Дана строка “Training Java”
+        String a = "Training Java";
+
+        //Выведите на экран ее длину
+        System.out.println(a.length());
+
+        //Выведите на экран символ, который стоит на 5 позиции
+        System.out.println(a.charAt(5));
+
+        // а затем добавьте к ней строку с сегодняшним числом и выведите результат на экран
+        String b = " 01.10.22";
+        System.out.println(a+b);
+
+
+    }
+}

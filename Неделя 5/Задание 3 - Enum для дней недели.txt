@@ -1,0 +1,21 @@
+public class Lesson5_3 {
+    enum Week {MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY,SUNDAY}
+
+    public static void main(String[] args) {
+        Week i = Week.MONDAY;
+        System.out.print("Сегодня " + i);
+        switch (i) {
+            case MONDAY:
+            case TUESDAY:
+            case WEDNESDAY:
+            case THURSDAY:
+            case FRIDAY:
+                System.out.println(" - будний день");
+                break;
+            case SATURDAY:
+            case SUNDAY:
+                System.out.println(" - выходной день");
+                break;
+        }
+    }
+}
